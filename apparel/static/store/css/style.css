@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('/static/store/images/image1.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+/* Update the CSS to increase specificity */
+.navbar {
+  background-color: #98c445;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-weight: bolder ;
+  font-size: 24px;
+  font-family:Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  
+}
+.navbar-brand:hover {
+  color: #0b0a3b;
+  
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0b0a3b ;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 4px 8px rgba(126, 100, 52, 0.1);
+}
+.navbar-nav .nav-item.active .nav-link {
+  background-color:#6745c4;
+}
+
+
+/* Admin Dashboard Styles */
+.table-responsive {
+  margin-top: 20px;
+  background-color: white;
+  border: #000;
+}
+
+.table.custom-table th,
+.table.custom-table td {
+  text-align: center;
+  padding: 12px;
+}
+
+.table.custom-table th {
+  background-color: #dfc18a;
+  color: #000;
+}
+
+.table.custom-table td {
+  background-color: #f9f9f9;
+}
+
+.table.custom-table img {
+  max-width: auto;
+  height: 10  px;
+}
+
+.table.custom-table .btn-primary,
+.table.custom-table .btn-danger {
+  margin: 5px;
+}
+/* Styles for delete confirmation modal */
+.modal-content {
+  background-color: #fefefe;
+  padding: 80px;
+  border: 1px solid #888;
+  width: 500px;
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+.btn-danger {
+  background-color: #251ac2;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #100b55;
+}
+
+/* Product List */
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.col-md-4 {
+  width: 100px; 
+  margin-bottom: 20px;
+}
+
+.card {
+  height: 100%; /* Set a fixed height for each card */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text {
+  display: none; /* Hide the description */
+}
+
+/* Add a button for the supply detail page */
+.btn-supply-detail {
+  margin-top: auto; /* Push the button to the bottom of the card */
+}
+
+/* Optional: Style the button as needed */
+.btn-supply-detail {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-supply-detail:hover {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-success {
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .modal-content {
+      width: 100%;
+  }
+}
+
+/* LOGIN/SIGN UP*/
+form {
+  max-width: 400px;
+  margin: auto;
+  background-color: #98c445;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: #98c445;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s ease;
+  
+}
+
+button {
+  background-color: #98c445;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+form:hover {
+  box-shadow: 0 8px 16px rgba(90, 158, 88, 0.2);
+}
+
+input:focus {
+  border-color: #cc9d58;
+}
+
+h1 {
+  text-align: center;
+}

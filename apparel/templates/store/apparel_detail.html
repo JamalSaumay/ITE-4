@@ -1,0 +1,8 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+    <h1 style="background-color: white; font-weight: bolder;">{{ supply.name }}</h1>
+    <p style="background-color: white; font-weight: bolder;">{{ supply.description }}</p>
+    <p style="background-color: white; font-weight: bolder;">Price: ₱{{ supply.price }}</p>
+    <img src="{{ supply.image.url }}" alt="{{ supply.name }}">
+{% endblock %}

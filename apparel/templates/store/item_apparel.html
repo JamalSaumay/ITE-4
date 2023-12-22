@@ -1,0 +1,21 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+    <h1 style = "color: rgb(9, 255, 42); font-weight: bolder"; ali><strong>WELCOME TO MY STORE</strong></h1>
+    <div class="row">
+        {% for supply in supplys %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ supply.image.url }}" alt="{{ supply.name }}" class="card-img-top supply-image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ supply.name }}</h5>
+                        <p class="card-text">Price: ₱{{ supply.price }}</p>
+                        <a href="{% url 'apparel_detail' supply.pk %}" class="btn btn-primary btn-supply-detail">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
